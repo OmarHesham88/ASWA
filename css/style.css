@@ -3840,7 +3840,7 @@ a.jp-next:after {
   min-height: 40px;
   line-height: 1.9;
   letter-spacing: 0.2px;
-  font-weight: 500;
+  font-weight: 600;
   text-shadow: 0 2px 8px rgba(101,97,169,0.09);
 }
 
@@ -3900,7 +3900,7 @@ a.jp-next:after {
   border-radius: 22px;
   /* box-shadow: 0 8px 30px 0 rgba(101, 97, 169, 0.17); */
   padding: 38px 30px 28px 30px;
-  flex: 1 1 500px;
+  flex: 1 1 350px;
   min-width: 270px;
   max-width: 800px;
   display: flex;
@@ -3967,6 +3967,7 @@ a.jp-next:after {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top:6px;
 }
 
 .styled-bullets .fa-circle-check {
