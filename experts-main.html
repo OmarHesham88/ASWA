@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <!-- English version -->
     <!-- <link rel="stylesheet" href="./css/style-en.css"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flickity@2.2.2/dist/flickity.min.css">
+
     <title>جمعية المحاسبات السعوديات</title>
   </head>
 
@@ -491,6 +494,94 @@
 
 
 
+<!-- Carousel - Experts -->
+<section class="container carousel-experts">
+
+    <h1 class="mb-5 text-center">
+    <span class="color-main h1 fw-bold">الخبراء</span> و المستشارين
+  </h1>
+  
+  <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 2000 
+}'>
+    <div class="col-md-3 mb-3 carousel-cell">
+      <a href="expert.html" style="text-decoration: none;">
+        <div class="d-flex align-items-center rounded overflow-hidden expert-block">
+          <img src="images/member.png" alt="خبير 1" style="height:100%;width:70px;object-fit:cover;">
+          <div>
+            <h5 class="expert-title">المستشار</h5>
+            <h5 class="px-3 text-start w-100 mb-0" style="color:white;">د منى خالد 9</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 mb-3 carousel-cell">
+      <a href="expert.html" style="text-decoration: none;">
+        <div class="d-flex align-items-center rounded overflow-hidden expert-block">
+          <img src="images/member.png" alt="خبير 1" style="height:100%;width:70px;object-fit:cover;">
+          <div>
+            <h5 class="expert-title">المستشار</h5>
+            <h5 class="px-3 text-start w-100 mb-0" style="color:white;">د منى خالد 9</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 mb-3 carousel-cell">
+      <a href="expert.html" style="text-decoration: none;">
+        <div class="d-flex align-items-center rounded overflow-hidden expert-block">
+          <img src="images/member.png" alt="خبير 1" style="height:100%;width:70px;object-fit:cover;">
+          <div>
+            <h5 class="expert-title">المستشار</h5>
+            <h5 class="px-3 text-start w-100 mb-0" style="color:white;">د منى خالد 9</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 mb-3 carousel-cell">
+      <a href="expert.html" style="text-decoration: none;">
+        <div class="d-flex align-items-center rounded overflow-hidden expert-block">
+          <img src="images/member.png" alt="خبير 1" style="height:100%;width:70px;object-fit:cover;">
+          <div>
+            <h5 class="expert-title">المستشار</h5>
+            <h5 class="px-3 text-start w-100 mb-0" style="color:white;">د منى خالد 9</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 mb-3 carousel-cell">
+      <a href="expert.html" style="text-decoration: none;">
+        <div class="d-flex align-items-center rounded overflow-hidden expert-block">
+          <img src="images/member.png" alt="خبير 1" style="height:100%;width:70px;object-fit:cover;">
+          <div>
+            <h5 class="expert-title">المستشار</h5>
+            <h5 class="px-3 text-start w-100 mb-0" style="color:white;">د منى خالد 9</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 mb-3 carousel-cell">
+      <a href="expert.html" style="text-decoration: none;">
+        <div class="d-flex align-items-center rounded overflow-hidden expert-block">
+          <img src="images/member.png" alt="خبير 1" style="height:100%;width:70px;object-fit:cover;">
+          <div>
+            <h5 class="expert-title">المستشار</h5>
+            <h5 class="px-3 text-start w-100 mb-0" style="color:white;">د منى خالد 9</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 mb-3 carousel-cell">
+      <a href="expert.html" style="text-decoration: none;">
+        <div class="d-flex align-items-center rounded overflow-hidden expert-block">
+          <img src="images/member.png" alt="خبير 1" style="height:100%;width:70px;object-fit:cover;">
+          <div>
+            <h5 class="expert-title">المستشار</h5>
+            <h5 class="px-3 text-start w-100 mb-0" style="color:white;">د منى خالد 9</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
 
 
@@ -534,30 +625,24 @@
       <div class="pricing-card-desc">500 ريال سنويًا</div>
     </div>
   </div>
-  <div class="pricing-note">
+  <!-- <div class="pricing-note">
     العضوية أوفر من الدفع لكل جلسة
-  </div>
+  </div> -->
 </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- End content section -->
-<!-- Start footer  -->
-<footer>
-  <div class="container">
-    <div class="row">
-      <!-- start footer widget -->
-                    <div class="col-sm-6 col-lg-4">
+  
+  
+  
+  
+  <!-- End content section -->
+  <!-- Start footer  -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- start footer widget -->
+        <div class="col-sm-6 col-lg-4">
                         <div class="footer-widget">
                             <div class="widget-title">
                                 <h4>عن الجمعية </h4>
@@ -885,6 +970,70 @@
     showExpertsPage(currentPage);
   });
 </script>
+
+
+
+<script>document.addEventListener("DOMContentLoaded", function () { 
+  const row = document.querySelector('.expert-carousel-row'); 
+  const blocks = Array.from(row.children);  // Convert child elements to an array 
+  const visibleCount = 4;  // You can change this to 3 for 3 cards visible 
+  const blockWidth = blocks[0].offsetWidth + parseInt(window.getComputedStyle(blocks[0]).marginRight, 10);  // Including margin 
+  const viewport = document.querySelector('.expert-carousel-viewport'); 
+  viewport.style.width = `${blockWidth * visibleCount}px`; // Set the viewport width 
+ 
+  let position = 0; // Current position of the first visible card 
+
+  // Function to move carousel forward
+  function moveNext() { 
+    row.style.transition = "transform 0.5s ease-in-out"; 
+    position++; 
+    row.style.transform = `translateX(-${blockWidth * position}px)`; 
+
+    // Listen for transition end to handle circular logic
+    row.addEventListener('transitionend', function handler() { 
+      if (position >= blocks.length - visibleCount) {
+        // Reset position and create the seamless effect
+        row.style.transition = "none"; 
+        position = 0; 
+        row.style.transform = `translateX(0)`;  // Reset position to the start 
+        
+        // Move the first block to the end, making new content come from the right
+        row.appendChild(blocks[0]);  
+        row.offsetHeight;  // Trigger reflow to apply the reset 
+        
+        // Re-enable the transition after a reset
+        row.style.transition = "transform 0.5s ease-in-out";  
+      }
+
+      // Continue with the next transition
+      row.removeEventListener('transitionend', handler);  // Remove event listener after it runs
+    }); 
+  } 
+
+  // Start the carousel
+  function startCarousel() { 
+    moveNext(); 
+    setTimeout(startCarousel, 1000);  // Adjust the interval as needed (1 second per move) 
+  } 
+
+  // Begin carousel loop
+  startCarousel(); 
+
+  // Recalculate block width on window resize
+  window.addEventListener('resize', () => { 
+    const updatedBlockWidth = blocks[0].offsetWidth + parseInt(window.getComputedStyle(blocks[0]).marginRight, 10); 
+    viewport.style.width = `${updatedBlockWidth * visibleCount}px`; 
+    row.style.transition = "none"; 
+    row.style.transform = `translateX(0)`; // Reset the carousel to the start 
+    position = 0; // Reset the position when resizing 
+  }); 
+}); 
+
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
+
 
 
 </body>

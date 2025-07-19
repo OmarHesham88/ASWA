@@ -3765,7 +3765,7 @@ a.jp-next:after {
 
 
 .identity-section {
-  padding: 40px 0 30px 0;
+  padding: 20px 0 30px 0;
   background: transparent;
   font-family: "DinNext-regular";
 }
@@ -3899,7 +3899,7 @@ a.jp-next:after {
   /* background: linear-gradient(135deg, #262151 0%, #231f47 100%); */
   border-radius: 22px;
   /* box-shadow: 0 8px 30px 0 rgba(101, 97, 169, 0.17); */
-  padding: 38px 30px 28px 30px;
+  padding: 19px 15px 14px 15px;
   flex: 1 1 350px;
   min-width: 270px;
   max-width: 800px;
@@ -3980,7 +3980,7 @@ a.jp-next:after {
 /* Experts Pricing */
 
 .experts-pricing-section {
-  padding: 64px 0 42px 0;
+  padding: 10px 0 42px 0;
   position: relative;
   font-family: "DinNext-regular";
   direction: rtl;
@@ -4118,3 +4118,118 @@ a.jp-next:after {
   }
 }
 
+
+
+
+.expert-carousel-viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.expert-carousel-row {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+  gap: 10px; /* Adjust this for the space between cards */
+}
+
+.expert-carousel-row > .col-md-3 {
+  flex-shrink: 0;
+  width: calc(100% / 4 - 10px); /* 4 cards visible at a time, adjust width */
+}
+
+@media (max-width: 768px) {
+  .expert-carousel-row > .col-md-3 {
+    width: calc(100% / 3 - 10px); /* Adjust for 3 cards visible on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .expert-carousel-row > .col-md-3 {
+    width: 100%; /* One card per row on mobile */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.carousel {
+  width: 100%; /* Or set a fixed width if needed */
+  height: 200px;
+
+}
+.flickity-prev-next-button.previous {
+    left: -40px !important;
+    top: 50px;
+  }
+  .flickity-prev-next-button.next {
+    right: -40px !important;
+    top: 50px;
+}
+
+@media(min-width: 1100px) {
+.flickity-prev-next-button.previous {
+    left: -80px !important;
+}
+.flickity-prev-next-button.next {
+    right: -80px !important;
+}
+}
+@media(max-width:680px){
+  .flickity-prev-next-button.next {
+    display: none;
+  }
+  .flickity-prev-next-button.previous {
+    display: none;
+
+  }
+}
+
+.carousel-cell {
+  width: 25%; 
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.carousel-experts .carousel {
+  direction: ltr;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.carousel-experts .carousel-cell {
+  box-sizing: border-box;
+  padding: 10px;
+  flex: 0 0 auto;
+  height: auto;
+}
+
+.carousel-experts .carousel-cell {
+  width: 25%;
+}
+
+@media (max-width: 991.98px) {
+  .carousel-experts .carousel-cell {
+    width: 33.3333%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .carousel-experts .carousel-cell {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-experts .carousel-cell {
+    width: 100%;
+  }
+}
