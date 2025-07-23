@@ -1118,14 +1118,31 @@ footer .col-lg-4:first-of-type p {
 .expert-background{
   background-image: url(../images/expert-background.webp);
 }
-.expert-block {
+.expert-block{
+  flex-direction:row !important;
+  transition: delay 0.1s, transform 0.3s linear;
+  height:85px;
+  background-color:#6561A9; 
+  cursor: pointer;
+} 
+.expert-block2{
+  flex-direction:row-reverse;
+  transition: delay 0.1s, transform 0.3s linear;
+  height:85px;
+  background-color:#6561A9; 
+  cursor: pointer;
+}
+.expert-block2 .expert-title{
+  transform:translateX(45px);
+}
+.carousel-experts expert-block {
     transition: delay 0.1s, transform 0.3s linear;
     height:85px;
     background-color:#6561A9; 
     cursor: pointer;
     flex-direction:row-reverse;
 }
-.expert-block .expert-title{
+.experts-content .expert-block .expert-title{
   transform:translateX(45px);
 }
 .expert-block:hover{
@@ -1133,7 +1150,8 @@ footer .col-lg-4:first-of-type p {
 
 }
 
-.expert-block img{
+.expert-block img,
+.expert-block2 img{
   height: 60px; 
   width: 60px; 
   object-fit: cover; 
@@ -3916,6 +3934,8 @@ a.jp-next:after {
   position: relative;
   /* border: 2.5px solid #6561A9; */
   margin-bottom: 20px;
+  margin-top:18px;
+
 }
 
 @media (max-width: 900px) {
@@ -3965,16 +3985,17 @@ a.jp-next:after {
   font-family: "DinNext-regular";
   text-align: right;
   letter-spacing: 0.05em;
+  align-items: start;
 }
 
 .styled-bullets .bullet-icon {
   min-width: 26px;
-  height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top:6px;
+  margin-top:13px;
 }
+
 
 .styled-bullets .fa-circle-check {
   color: #2ac0f0;
@@ -4203,7 +4224,9 @@ a.jp-next:after {
   padding: 10px;
   box-sizing: border-box;
 }
-
+.carousel-experts{
+  height: 230px;
+}
 
 .carousel-experts .carousel {
   direction: ltr;
