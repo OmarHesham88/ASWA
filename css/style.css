@@ -4271,7 +4271,10 @@ a.jp-next:after {
 
 .services-section {
   font-size: 1.5rem;
-  background-color: transparent; /* يمكنك تغييره حسب الخلفية */
+  background-color: transparent; 
+}
+.services-section h1 {
+  font-size:32px;
 }
 
 .service-item {
@@ -4289,7 +4292,7 @@ a.jp-next:after {
 
 }
 
-/* .service-text {
-  line-height: 1.8;
-} */
+.flickity-page-dots{
+  display: none !important;
+}
 
