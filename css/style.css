@@ -793,6 +793,12 @@ footer .container {
 .pg-title1{
   background-image: url(../images/01.jpg) !important;
 }
+.pg-title2{
+  background-image: url(../images/02.jpg) !important;
+}
+.pg-title3{
+  background-image: url(../images/03.jpg) !important;
+}
 .page-title.smaller-bg {
   height: 150px;
 }
@@ -1389,7 +1395,7 @@ footer .col-lg-4:first-of-type p {
   min-height: 1000px;
 }
 
-.price {
+.expert-session-details .price {
   color: #23be82;
   font-weight: 800;
   font-size: 1.09em;
