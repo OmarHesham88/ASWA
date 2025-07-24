@@ -15,8 +15,12 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <!-- font-awesome -->
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/jPages.css">
     <link rel="stylesheet" href="./css/sweetalert2.css">
-
+    <!-- slick library -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
     <!-- Own css -->
     <!-- Arabic version -->
     <link rel="stylesheet" href="./css/style.css">
@@ -165,26 +169,22 @@
         <section class="page-title account-header ">
             <div class="container">
                 <h2>
-                    خدمات الموقع </h2>
+                    العضويات</h2>
             </div>
         </section>
         <!-- End page title scetion -->
         <!-- Start user account -->
         <section class="volunteer-form  user-account">
+                       <div class="container">
+
+                       </div>
             <div class="container">
-
-
-                <h6>
-                    مرحبا بك فى موقع جمعية المحاسبات السعوديات <br>
-                    يمكنك الان الاستفادة من خدمات الموقع التالية
-
-                </h6>
                 <!-- Start account content -->
-                <div class="row">
+                <div class="row mt-5 accountSetting">
                     <!-- Start account options -->
                     <div class="col-6 col-md-4 col-lg-3">
                         <div class="account-options">
-                            <a href="./userAccount.html" class="our-vision active ">
+                            <a href="./userAccount.html" class="our-vision active  ">
                                 <div class="vision-title">
                                     <div class="title-icon">
                                         <i class="fa-solid fa-globe"></i>
@@ -193,7 +193,7 @@
                                 </div>
 
                             </a>
-                            <a href="./accountSetting.html" class="our-vision">
+                            <a href="./accountSetting.html" class="our-vision ">
                                 <div class="vision-title">
                                     <div class="title-icon">
                                         <i class="fa-solid fa-gear"></i>
@@ -203,7 +203,7 @@
                                 </div>
 
                             </a>
-                            <a href="./accountNotifications.html" class="our-vision">
+                            <a href="./accountNotifications.html" class="our-vision ">
                                 <div class="vision-title">
                                     <div class="title-icon">
                                         <i class="fa-solid fa-bell"></i>
@@ -237,176 +237,238 @@
                     </div>
                     <!-- End account options -->
                     <!-- Start account services content -->
-                    <div class="col-6 col-md-8 col-lg-9">
-                        <div class="account-services">
-                            <div class="header-nav">
-                                <nav>
-                                    <ul class="d-flex">
-                                        <li>
-                                            <a href="./accountMembership.html">
-                                                <div>
-                                                    <i class="fa-solid fa-crown"></i>
-                                                </div>
-                                                <span>
-                                                    العضويات
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="./accountLearning.html">
-                                                <div>
-                                                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div class="col-6 col-md-8 col-lg-9 bos-word packages account-packages">
 
-                                                </div>
-                                                <span>التعليم المستمر</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="./userAccountPlatform.html">
-                                                <div>
-                                                    <i class="fa-solid fa-calculator"></i>
+                        <div class="membership slider row mt-0">
+<div class="expert-session-details account-session-details">
+  <div class="detail-item longer-text-field">
+    <span class="detail-label"><i class="fas fa-calendar-alt"></i> اسم الجلسة :</span>
+    <span>جلسة استشارة أسرية فردية</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-clock"></i> مدة الجلسة :</span>
+    <span>٣٠ دقيقة</span>
+  </div>
+  <div class="detail-item longer-text-field">
+    <span class="detail-label"><i class="fas fa-map-marker-alt"></i> موقع الجلسة :</span>
+    <img src="images/google-meeting-icon.png" width="30px" alt="google meeting" class="zoom-icon">
+    <span>G-meet</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-dollar-sign"></i> سعر الجلسة :</span>
+    <span class="price">150 ريال</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-check-circle"></i> حالة الجلسة :</span>
+    <span class="status-inactive">غير فعالة</span>
+  </div>
+</div>
+<div class="expert-session-details account-session-details">
+  <div class="detail-item longer-text-field">
+    <span class="detail-label"><i class="fas fa-calendar-alt"></i> اسم الجلسة :</span>
+    <span>جلسة استشارة أسرية فردية</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-clock"></i> مدة الجلسة :</span>
+    <span>٣٠ دقيقة</span>
+  </div>
+  <div class="detail-item longer-text-field">
+    <span class="detail-label"><i class="fas fa-map-marker-alt"></i> موقع الجلسة :</span>
+    <img src="images/google-meeting-icon.png" width="30px" alt="google meeting" class="zoom-icon">
+    <span>G-meet</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-dollar-sign"></i> سعر الجلسة :</span>
+    <span class="price">150 ريال</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-check-circle"></i> حالة الجلسة :</span>
+    <span class="status-inactive">غير فعالة</span>
+  </div>
+</div>
+<div class="expert-session-details account-session-details">
+  <div class="detail-item longer-text-field">
+    <span class="detail-label"><i class="fas fa-calendar-alt"></i> اسم الجلسة :</span>
+    <span>جلسة استشارة أسرية فردية</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-clock"></i> مدة الجلسة :</span>
+    <span>٣٠ دقيقة</span>
+  </div>
+  <div class="detail-item longer-text-field">
+    <span class="detail-label"><i class="fas fa-map-marker-alt"></i> موقع الجلسة :</span>
+    <img src="images/google-meeting-icon.png" width="30px" alt="google meeting" class="zoom-icon">
+    <span>G-meet</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-dollar-sign"></i> سعر الجلسة :</span>
+    <span class="price">150 ريال</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-check-circle"></i> حالة الجلسة :</span>
+    <span class="status-inactive">غير فعالة</span>
+  </div>
+</div>
+<div class="expert-session-details account-session-details">
+  <div class="detail-item longer-text-field">
+    <span class="detail-label"><i class="fas fa-calendar-alt"></i> اسم الجلسة :</span>
+    <span>جلسة استشارة أسرية فردية</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-clock"></i> مدة الجلسة :</span>
+    <span>٣٠ دقيقة</span>
+  </div>
+  <div class="detail-item longer-text-field">
+    <span class="detail-label"><i class="fas fa-map-marker-alt"></i> موقع الجلسة :</span>
+    <img src="images/google-meeting-icon.png" width="30px" alt="google meeting" class="zoom-icon">
+    <span>G-meet</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-dollar-sign"></i> سعر الجلسة :</span>
+    <span class="price">150 ريال</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-check-circle"></i> حالة الجلسة :</span>
+    <span class="status-inactive">غير فعالة</span>
+  </div>
+</div>
+<div class="expert-session-details account-session-details">
+  <div class="detail-item longer-text-field">
+    <span class="detail-label"><i class="fas fa-calendar-alt"></i> اسم الجلسة :</span>
+    <span>جلسة استشارة أسرية فردية</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-clock"></i> مدة الجلسة :</span>
+    <span>٣٠ دقيقة</span>
+  </div>
+  <div class="detail-item longer-text-field">
+    <span class="detail-label"><i class="fas fa-map-marker-alt"></i> موقع الجلسة :</span>
+    <img src="images/google-meeting-icon.png" width="30px" alt="google meeting" class="zoom-icon">
+    <span>G-meet</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-dollar-sign"></i> سعر الجلسة :</span>
+    <span class="price">150 ريال</span>
+  </div>
+  <div class="detail-item">
+    <span class="detail-label"><i class="fas fa-check-circle"></i> حالة الجلسة :</span>
+    <span class="status-inactive">غير فعالة</span>
+  </div>
+</div>
 
-                                                </div>
-                                                <span>
-                                                    منصة
-                                                    محاسبة معتمدة</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="./accountWomenPlatform.html">
-                                                <div>
-                                                    <i class="fa-solid fa-users-rays"></i>
-
-                                                </div>
-                                                <span>منصة
-                                                    السيدات فى المجلس
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="./accountSessions.html">
-                                                <div>
-                                                <i class="fa-solid fa-comments"></i>
-
-                                                </div>
-                                                <span>
-                                        الاستشارات
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
                         </div>
                     </div>
-                    <!-- End account services content -->
                 </div>
-                <!-- End account content -->
+
+
+    
+    <!-- End account services content -->
+    </div>
+
+    </section>
+    <!-- End user account -->
+
+
+    <!-- Start footer  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- start footer widget -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="footer-widget">
+                        <div class="widget-title">
+                            <h4>عن الجمعية </h4>
+
+                        </div>
+                        <p>جمعية مهنية غير هادفة للربح تسعى للنهوض بمهنة
+                            المحاسبة وتعنى بزيادة الوعي في المجتمع السعودي
+                            لمهنة المحاسبة حيث تعد أول جمعية مهنية تختص بتمكين
+                            المرأة في المجال المحاسبي وتعزيز النمو والتطور المهني
+                            للعاملين من الجنسين في المهنة.</p>
+                    </div>
+
+                </div>
+                <!-- End footer widget -->
+                <!-- start footer widget -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="footer-widget">
+                        <div class="widget-title">
+                            <h4>مواعيد العمل</h4>
+                        </div>
+                        <p>نرحب بكم في مقر الجمعية خلال أوقات العمل</p>
+                        <p class="work-times"> <span>الأحد - الخميس</span> <span>8:00 ص - 2:00 م</span><i
+                                class="fa-regular fa-clock"></i></p>
+                        <p class="work-times"> <span>الجمعة - السبت</span> <span> إجازة رسمية</span><i
+                                class="fa-regular fa-clock"></i></p>
+                        <div class="pay-methods">
+                            <p>ندعم طرق الدفع التالية</p>
+                            <p>
+                                <img src="./images/mada.png" alt="">
+                                <img src="./images/master-card.png" alt="">
+                                <img src="./images/viza.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End footer widget -->
+                <!-- start footer widget -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-widget">
+                        <div class="widget-title">
+                            <h4>مقر الجمعية </h4>
+
+                        </div>
+                        <p>المملكة العربية السعودية - شارع الملك فهد
+                            بجوار بنك البلاد بناية رقم 12 الطابق الخامس</p>
+                        <div class="footer-social">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-snapchat"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </div>
+                        <div class="footer-nav">
+                            <nav>
+                                <ul class="d-flex">
+                                    <li><a href="./rulesPolicy.html">اللوائح و السياسات</a></li> -
+                                    <li><a href="./privacy.html">سياسة الخصوصية</a></li> -
+                                    <li><a href="./usageRules.html">شروط الإستخدام </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End footer widget -->
+            </div>
+        </div>
+        <!-- Start bottom bar -->
+        <section class="bottom-bar">
+            <div class="container">
+                <p>2022 جميع الحقوق محفوظة لموقع جمعية المحاسبات السعوديات </p>
+                <p><a href="#">تطوير مؤسسة ثقوب</a></p>
             </div>
         </section>
-        <!-- End user account -->
-
-
-        <!-- Start footer  -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <!-- start footer widget -->
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="footer-widget">
-                            <div class="widget-title">
-                                <h4>عن الجمعية </h4>
-
-                            </div>
-                            <p>جمعية مهنية غير هادفة للربح تسعى للنهوض بمهنة
-                                المحاسبة وتعنى بزيادة الوعي في المجتمع السعودي
-                                لمهنة المحاسبة حيث تعد أول جمعية مهنية تختص بتمكين
-                                المرأة في المجال المحاسبي وتعزيز النمو والتطور المهني
-                                للعاملين من الجنسين في المهنة.</p>
-                        </div>
-
-                    </div>
-                    <!-- End footer widget -->
-                    <!-- start footer widget -->
-                    <div class="col-sm-6 col-lg-4">
-                        <div class="footer-widget">
-                            <div class="widget-title">
-                                <h4>مواعيد العمل</h4>
-                            </div>
-                            <p>نرحب بكم في مقر الجمعية خلال أوقات العمل</p>
-                            <p class="work-times"> <span>الأحد - الخميس</span> <span>8:00 ص - 2:00 م</span><i
-                                    class="fa-regular fa-clock"></i></p>
-                            <p class="work-times"> <span>الجمعة - السبت</span> <span> إجازة رسمية</span><i
-                                    class="fa-regular fa-clock"></i></p>
-                            <div class="pay-methods">
-                                <p>ندعم طرق الدفع التالية</p>
-                                <p>
-                                    <img src="./images/mada.png" alt="">
-                                    <img src="./images/master-card.png" alt="">
-                                    <img src="./images/viza.png" alt="">
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- End footer widget -->
-                    <!-- start footer widget -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="footer-widget">
-                            <div class="widget-title">
-                                <h4>مقر الجمعية </h4>
-
-                            </div>
-                            <p>المملكة العربية السعودية - شارع الملك فهد
-                                بجوار بنك البلاد بناية رقم 12 الطابق الخامس</p>
-                            <div class="footer-social">
-                                <a href="#">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-snapchat"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa-brands fa-telegram"></i>
-                                </a>
-                            </div>
-                            <div class="footer-nav">
-                                <nav>
-                                    <ul class="d-flex">
-                                        <li><a href="./rulesPolicy.html">اللوائح و السياسات</a></li> -
-                                        <li><a href="./privacy.html">سياسة الخصوصية</a></li> -
-                                        <li><a href="./usageRules.html">شروط الإستخدام </a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- End footer widget -->
-                </div>
-            </div>
-            <!-- Start bottom bar -->
-            <section class="bottom-bar">
-                <div class="container">
-                    <p>2022 جميع الحقوق محفوظة لموقع جمعية المحاسبات السعوديات </p>
-                    <p><a href="#">تطوير مؤسسة ثقوب</a></p>
-                </div>
-            </section>
-            <!-- End bottom bar -->
-        </footer>
-        <!-- End footer  -->
+        <!-- End bottom bar -->
+    </footer>
+    <!-- End footer  -->
     </div>
     <!-- End page Content -->
     <!-- Start responsive menu  -->
@@ -549,11 +611,64 @@
     </script> -->
     <!-- font-awesome -->
     <script src="./js/all.min.js"></script>
+    <script src="./js/jPages.js"></script>
     <script src="./js/sweetalert2.js"></script>
-
+    <!-- slick library -->
+    <script src="./js/slick.js"></script>
     <!-- own js -->
     <script src="./js/custom.js"></script>
     <script>
+        $('.membership').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 2,
+            dots: true,
+            arrows: false,
+            slidesToScroll: 2,
+            rtl: true,
+            responsive: [{
+                    breakpoint: 1700,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
         $(document).on('click', '#logOutAcount', function (e) {
 
             Swal.fire({

@@ -790,6 +790,9 @@ footer .container {
   position: relative;
   text-align: center;
 }
+.pg-title1{
+  background-image: url(../images/01.jpg) !important;
+}
 .page-title.smaller-bg {
   height: 150px;
 }
@@ -4296,3 +4299,14 @@ a.jp-next:after {
   display: none !important;
 }
 
+
+.account-session-details{
+  display: flex !important;
+  min-width: 380px;
+}
+
+@media(max-width: 450px) {
+  .account-session-details {
+    min-width: 250px;
+  }
+}
