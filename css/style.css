@@ -4266,3 +4266,30 @@ a.jp-next:after {
 .flickity-button {
     background: hsl(0deg 0% 100%) !important;
 }
+
+
+
+.services-section {
+  font-size: 1.5rem;
+  background-color: transparent; /* يمكنك تغييره حسب الخلفية */
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.service-bullet {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #2ac0f0;
+  flex-shrink: 0;
+  margin-top: 15px !important;
+
+}
+
+/* .service-text {
+  line-height: 1.8;
+} */
+
