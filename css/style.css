@@ -814,6 +814,11 @@ footer .container {
   z-index: 9;
   font-size: 30px;
 }
+/* @media (max-width: 450px) {
+  .page-title h2 {
+    font-size: 25px;
+  }
+} */
 span.role-of {
   display: block;
   margin-top: 5px;
@@ -1302,35 +1307,6 @@ footer .col-lg-4:first-of-type p {
   overflow: hidden;
 }
 
-@media (max-width: 1600px) {
-  .expert-sessions {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 1200px) {
-  .expert-sessions {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .expert-sessions {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  }
-}
-
-/* Mobile: 1 column */
-@media (max-width: 480px) {
-  .expert-sessions {
-    grid-template-columns: 1fr;
-  }
-
-  .expert-session-details {
-    max-width: 100%;
-    padding: 20px;
-  }
-}
-
 .expert-session-details:before {
   content: "";
   position: absolute;
@@ -1358,6 +1334,7 @@ footer .col-lg-4:first-of-type p {
   font-weight: 500;
   color: #f6f7fa;
   transition: box-shadow 0.2s;
+  text-align: start;
 }
 .detail-item.longer-text-field {
   min-height: 84px;
@@ -1385,6 +1362,7 @@ footer .col-lg-4:first-of-type p {
   display: flex;
   align-items: center;
   gap: 7px;
+  white-space: nowrap;
 }
 .detail-lable.session-name {
   min-height: 1000px;
@@ -1464,22 +1442,63 @@ footer .col-lg-4:first-of-type p {
   }
 }
 @media (max-width: 600px) {
-  .expert-session-details {
-    padding: 28px 26px 16px 26px;
-    gap: 10px;
-    width: 300px;
-  }
   .detail-item {
     padding: 8px 6px 8px 5px;
     font-size: 1rem;
     gap: 7px;
   }
   .detail-label {
-    min-width: 85px;
+    min-width: 108px;
     font-size: 1em;
   }
 }
+@media (max-width: 1600px) {
+  .expert-sessions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  .expert-sessions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media (max-width: 768px) {
+  .expert-sessions {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .expert-session-details {
+    padding: 28px 26px 16px 26px;
+    gap: 10px;
+    width: 300px;
+  }
+}
+/* Mobile: 1 column */
+@media (max-width: 480px) {
+  .expert-sessions {
+    grid-template-columns: 1fr;
+  }
+
+  .expert-session-details {
+    max-width: 90%;
+    padding: 12px;
+    min-height: 55px;
+    font-size: 1em;
+  }
+  .expert-session-details .price {
+    font-size: 1em;
+    padding: 3px 10px;
+  }
+  .status-active {
+    font-size: 1em;
+  }
+  .expert-session-details .btn-modern {
+    padding: 8px 20px;
+    font-size: 1em;
+  }
+}
 .news {
   background-image: url(../images/news.jpg);
 }
@@ -3887,7 +3906,6 @@ a.jp-next:after {
     align-items: center;
   }
   .identity-card {
-    width: 100%;
     min-width: 0;
     padding: 22px 12px;
   }
@@ -3975,6 +3993,18 @@ a.jp-next:after {
   text-align: right;
   letter-spacing: 0.05em;
   align-items: start;
+}
+@media (max-width: 450px) {
+  .card-header {
+    font-size: 1.5rem;
+  }
+  .styled-bullets li {
+    font-size: 1.16rem;
+  }
+  .advantage-card {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .styled-bullets .bullet-icon {
@@ -4129,9 +4159,6 @@ a.jp-next:after {
     gap: 18px;
     max-width: 95vw;
   }
-  .pricing-card {
-    max-width: 100%;
-  }
 }
 
 .expert-carousel-viewport {
@@ -4247,6 +4274,11 @@ a.jp-next:after {
 .services-section {
   font-size: 1.5rem;
   background-color: transparent;
+}
+@media (max-width: 450px) {
+  .services-section {
+    font-size: 1.16rem;
+  }
 }
 .services-section h1 {
   font-size: 32px;
