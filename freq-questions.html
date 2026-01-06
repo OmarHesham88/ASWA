@@ -14,11 +14,7 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <!-- font-awesome -->
     <link rel="stylesheet" href="./css/all.min.css" />
-    <!-- Select-2 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
-      rel="stylesheet"
-    />
+
     <!-- Own css -->
     <!-- Arabic version -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -99,7 +95,7 @@
             <div class="navbar p-0">
               <nav class="d-flex">
                 <ul class="d-flex">
-                  <li class="nav-link">
+                  <li class="nav-link active">
                     <a href="./index.html">
                       <img src="./images/home.png" alt="" />
                       <span> الرئيسية </span>
@@ -160,24 +156,90 @@
       </header>
       <!-- End header -->
       <!-- Start page title scetion -->
-      <section class="page-title memberRegistration sing-in">
+      <section class="page-title rulesPolicy">
         <div class="container">
-          <h2>استعادة كلمة المرور</h2>
+          <h2>??????? ???????</h2>
         </div>
       </section>
       <!-- End page title scetion -->
-      <!-- Start content section -->
-      <section class="volunteer-form registration-form userSign">
-        <h6>اكتب رقم الجوال المسجل فى الموقع لتستطيع استعادة كلمه المرور</h6>
-        <form action="./passCode.html">
-          <p class="select-box mb-4">
-            <input type="phone" placeholder=" رقم الجوال" />
-          </p>
+            <!-- Start content section -->
+      <section class="faq-section">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h1 class="color-main">??????? ???????</h1>
+            <p>?????? ?????? ?? ??????? ???????? ????????.</p>
+          </div>
 
-          <button type="submit">ارسال</button>
-        </form>
+          <div class="faq-wrapper">
+            <div class="faq-item open">
+              <button class="faq-header" type="button" aria-expanded="true" aria-controls="faq-1">
+                <span class="faq-title">?? ?? ????? ?????? ??????? ???????</span>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+              <div id="faq-1" class="faq-body" aria-hidden="false">
+                <div class="faq-body-content">
+                  ?? ????? ????? ????? ?? ?????? ?????? ?????? ?????? ??? ???????
+                  ???? ??? ???????? ?????? ??????? ?????? ?????? ???????? ?????? ????????? ????????.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-header" type="button" aria-expanded="false" aria-controls="faq-2">
+                <span class="faq-title">?? ?? ????? ??????? ??? ????????</span>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+              <div id="faq-2" class="faq-body" aria-hidden="true">
+                <div class="faq-body-content">
+                  ???? ????? ?????? ??????? ?????? ??? ?????? ?? ????????
+                  ?????? ??????? ???????? ???????? ???????? ??????? ?????.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-header" type="button" aria-expanded="false" aria-controls="faq-3">
+                <span class="faq-title">?? ?? ???????? ???????? ???? ???????? ????????</span>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+              <div id="faq-3" class="faq-body" aria-hidden="true">
+                <div class="faq-body-content">
+                  ???? ????? ??????? ??????? ???????? ??????? ???????? ?????????? ???????????? ????????
+                  ????? ??? ????? ?????? ?????? ??????? ??????.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-header" type="button" aria-expanded="false" aria-controls="faq-4">
+                <span class="faq-title">?? ?? ?????????? ?? ????????</span>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+              <div id="faq-4" class="faq-body" aria-hidden="true">
+                <div class="faq-body-content">
+                  ????????? ?????????? ???????? ?? ???????? ????? ??????? ???????
+                  ??????? ????????? ??????? ??? ???????.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-header" type="button" aria-expanded="false" aria-controls="faq-5">
+                <span class="faq-title">??? ???? ???????? ?? ???????</span>
+                <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+              </button>
+              <div id="faq-5" class="faq-body" aria-hidden="true">
+                <div class="faq-body-content">
+                  ??? ????? ??????? ??????? ?? ??????? ?? ???? ??????
+                  ????? ??????? ??? ?????????? ?????? ????????.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- End content section -->
+
       <!-- Start footer  -->
       <footer>
         <div class="container">
@@ -260,7 +322,7 @@
                   <nav>
                     <ul class="d-flex">
                       <li>
-                        <a href="./freq-questions.html">الاسئلة الشائعة</a>
+                        <a href="./rulesPolicy.html">اللوائح و السياسات</a>
                       </li>
                       -
                       <li><a href="./privacy.html">سياسة الخصوصية</a></li>
@@ -293,7 +355,7 @@
           <button class="close-menu">
             <i class="fa-solid fa-circle-xmark"></i>
           </button>
-          <li class="nav-link">
+          <li class="nav-link active">
             <a href="./index.html">
               <img src="./images/home.png" alt="" />
               <span> الرئيسية </span>
@@ -306,7 +368,7 @@
               <span>التعليم المستمر</span>
             </a>
           </li>
-          <li>
+          <li class="">
             <a href="./programs.html">
               <img src="./images/programs.png" alt="" />
               <span>البرامج و المبادرات</span>
@@ -350,7 +412,7 @@
               <span> أهدافنا الاستراتيجية </span>
             </a>
           </li>
-          <li class="nav-link active">
+          <li class="nav-link">
             <a href="./voulnteer.html">
               <img src="./images/volunteer.png" alt="" />
               <span> التطوع </span>
@@ -419,11 +481,72 @@
     </script> -->
     <!-- font-awesome -->
     <script src="./js/all.min.js"></script>
-    <!-- Select-s2 -->
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <!-- string character -->
-    <script src="./js/ETC.js"></script>
+
     <!-- own js -->
     <script src="./js/custom.js"></script>
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var items = document.querySelectorAll(".faq-item");
+
+        function openItem(item) {
+          var header = item.querySelector(".faq-header");
+          var body = item.querySelector(".faq-body");
+          var content = item.querySelector(".faq-body-content");
+          if (!header || !body || !content) return;
+          item.classList.add("open");
+          header.setAttribute("aria-expanded", "true");
+          body.setAttribute("aria-hidden", "false");
+          body.style.maxHeight = content.scrollHeight + "px";
+        }
+
+        function closeItem(item) {
+          var header = item.querySelector(".faq-header");
+          var body = item.querySelector(".faq-body");
+          var content = item.querySelector(".faq-body-content");
+          if (!header || !body || !content) return;
+          item.classList.remove("open");
+          header.setAttribute("aria-expanded", "false");
+          body.setAttribute("aria-hidden", "true");
+          body.style.maxHeight = "0px";
+        }
+
+        items.forEach(function (item) {
+          var header = item.querySelector(".faq-header");
+          if (!header) return;
+          header.addEventListener("click", function () {
+            var isOpen = item.classList.contains("open");
+            items.forEach(function (other) {
+              if (other !== item) closeItem(other);
+            });
+            if (isOpen) {
+              closeItem(item);
+            } else {
+              openItem(item);
+            }
+          });
+        });
+
+        items.forEach(function (item) {
+          if (item.classList.contains("open")) {
+            openItem(item);
+          } else {
+            closeItem(item);
+          }
+        });
+
+        window.addEventListener("resize", function () {
+          items.forEach(function (item) {
+            if (item.classList.contains("open")) {
+              var body = item.querySelector(".faq-body");
+              var content = item.querySelector(".faq-body-content");
+              if (body && content) {
+                body.style.maxHeight = content.scrollHeight + "px";
+              }
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

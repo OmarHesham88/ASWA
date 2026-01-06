@@ -158,21 +158,50 @@ $(document).on("click", function (event) {
 //   if (event.target === modal) modal.classList.remove("show");
 // };
 
+window.addEventListener("DOMContentLoaded", () => {
+  const skeleton = document.getElementById("experts-skeleton");
+  const content = document.getElementById("experts-content");
 
-
-  window.addEventListener("DOMContentLoaded", () => {
-    const skeleton = document.getElementById("experts-skeleton");
-    const content = document.getElementById("experts-content");
-
+  setTimeout(() => {
+    skeleton.classList.add("d-none");
+    content.classList.remove("d-none");
     setTimeout(() => {
-      skeleton.classList.add("d-none");               
-      content.classList.remove("d-none");             
-      setTimeout(() => {
-        content.classList.add("show1");                
-      }, 50); 
-    }, 1000);
+      content.classList.add("show1");
+    }, 50);
+  }, 1000);
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("videoModal");
+  const frame = document.getElementById("videoFrame");
+  const cards = document.querySelectorAll(".video-card");
+  const closeBtn = modal ? modal.querySelector(".video-close") : null;
+
+  if (!modal || !frame || cards.length == 0) return;
+
+  const closeModal = () => {
+    modal.classList.remove("show");
+    modal.setAttribute("aria-hidden", "true");
+    frame.src = "";
+    document.body.style.overflow = "";
+  };
+
+  cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const videoId = card.getAttribute("data-video-id");
+      if (!videoId) return;
+      frame.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+      modal.classList.add("show");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    });
   });
 
-
-
-  
+  if (closeBtn) closeBtn.addEventListener("click", closeModal);
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeModal();
+  });
+});
