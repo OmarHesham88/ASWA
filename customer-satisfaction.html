@@ -14,7 +14,7 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <!-- font-awesome -->
     <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" href="./css/jPages.css" />
+
     <!-- Own css -->
     <!-- Arabic version -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -40,9 +40,9 @@
                   </a>
                 </li>
                 <li>
-                  <a href="accountantPlatform.html">
-                    <i class="fa-solid fa-keyboard"></i>
-                    <span>منصة محاسبة معتمدة</span>
+                  <a href="customer-satisfaction.html">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <span>قياس الرضا للمستفيدين</span>
                   </a>
                 </li>
                 <li>
@@ -101,6 +101,7 @@
                       <span> الرئيسية </span>
                     </a>
                   </li>
+
                   <li class="nav-link">
                     <a href="./news.html">
                       <img src="./images/paper-bottom.png" alt="" />
@@ -139,7 +140,16 @@
                         class="fa-solid fa-people-group"
                         style="margin-left: 5px"
                       ></i>
-                      <span> الخبراء و المستشارين </span>
+                      <span> برنامج الإرشاد المهنى </span>
+                    </a>
+                  </li>
+                  <li class="nav-link">
+                    <a href="./Professional-meetings.html">
+                      <i
+                        class="fa-solid fa-briefcase"
+                        style="margin-left: 5px"
+                      ></i>
+                      <span>اللقائات المهنية</span>
                     </a>
                   </li>
                 </ul>
@@ -155,158 +165,158 @@
       </header>
       <!-- End header -->
       <!-- Start page title scetion -->
-      <section class="page-title news">
+      <section class="page-title rulesPolicy">
         <div class="container">
-          <h2>الإرشاد الأكاديمى</h2>
+          <h2>قياس الرضا للمستفيدين</h2>
         </div>
       </section>
       <!-- End page title scetion -->
       <!-- Start content section -->
+      <section class="satisfaction-section">
+        <div class="container">
+          <form class="satisfaction-form" action="#">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <label class="form-label">الاسم الكريم</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="اكتب الاسم كاملاً"
+                />
+              </div>
+              <div class="col-md-6 mb-4">
+                <label class="form-label">البريد الإلكتروني</label>
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="مثال: example@gmail.com"
+                />
+              </div>
+              <div class="col-md-6 mb-4">
+                <label class="form-label">رقم الهاتف</label>
+                <input
+                  type="tel"
+                  class="form-input"
+                  placeholder="مثال: +966 12345656"
+                />
+              </div>
+            </div>
 
-      <section class="videos-section py-4">
-        <div class="container text-center">
-          <div class="row defaults" id="content">
-            <ul
-              id="itemContainer"
-              class="row list-unstyled justify-content-center"
-            >
-              <li class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="video-card" data-video-id="dQw4w9WgXcQ">
-                  <span class="video-date">12 ???? 2025</span>
-                  <h5>خبر تجريبي للموقع خبر تجريبي للموقع</h5>
-                  <div class="video-thumb">
-                    <img src="./images/new-1.png" alt="" />
-                    <span class="play-btn"
-                      ><i class="fa-solid fa-play"></i
-                    ></span>
-                  </div>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <label class="form-label">الجنس</label>
+                <div class="form-radio-group">
+                  <label class="radio-item">
+                    <input type="radio" name="gender" />
+                    <span>ذكر</span>
+                  </label>
+                  <label class="radio-item">
+                    <input type="radio" name="gender" />
+                    <span>أنثى</span>
+                  </label>
                 </div>
-              </li>
+              </div>
+              <div class="col-md-6 mb-4">
+                <label class="form-label">العلاقة مع الجمعية</label>
+                <div class="satisfaction-select-wrap">
+                  <select class="satisfaction-select">
+                    <option>زائر</option>
+                    <option>عضو</option>
+                    <option>متطوع</option>
+                    <option>مُستفيد</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
-              <li class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="video-card" data-video-id="M7lc1UVf-VE">
-                  <span class="video-date">13 ?????? 2025</span>
-                  <h5>خبر تجريبي للموقع خبر تجريبي للموقع</h5>
-                  <div class="video-thumb">
-                    <img src="./images/new-1.png" alt="" />
-                    <span class="play-btn"
-                      ><i class="fa-solid fa-play"></i
-                    ></span>
-                  </div>
+            <div class="satisfaction-questions">
+              <div class="question-block">
+                <p>ما مدى رضاك عن الخدمة ؟</p>
+                <div class="rating-list">
+                  <label
+                    ><input type="radio" name="q1" />
+                    <span>5/5 : راضى جداً</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q1" />
+                    <span>4/5 : راضى</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q1" />
+                    <span>3/5 : لا بأس</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q1" />
+                    <span>2/5 : غير راضى</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q1" />
+                    <span>1/5 : غير راضى جداً</span></label
+                  >
                 </div>
-              </li>
+              </div>
 
-              <li class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="video-card" data-video-id="ysz5S6PUM-U">
-                  <span class="video-date">28 ????? 2025</span>
-                  <h5>خبر تجريبي للموقع خبر تجريبي للموقع</h5>
-                  <div class="video-thumb">
-                    <img src="./images/new-1.png" alt="" />
-                    <span class="play-btn"
-                      ><i class="fa-solid fa-play"></i
-                    ></span>
-                  </div>
+              <div class="question-block">
+                <p>ما مدى رضاك عن التفاعل مع الموظفين ؟</p>
+                <div class="rating-list">
+                  <label
+                    ><input type="radio" name="q2" />
+                    <span>5/5 : راضى جداً</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q2" />
+                    <span>4/5 : راضى</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q2" />
+                    <span>3/5 : لا بأس</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q2" />
+                    <span>2/5 : غير راضى</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q2" />
+                    <span>1/5 : غير راضى جداً</span></label
+                  >
                 </div>
-              </li>
+              </div>
 
-              <li class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="video-card" data-video-id="dQw4w9WgXcQ">
-                  <span class="video-date">12 ???? 2025</span>
-                  <h5>خبر تجريبي للموقع خبر تجريبي للموقع</h5>
-                  <div class="video-thumb">
-                    <img src="./images/new-1.png" alt="" />
-                    <span class="play-btn"
-                      ><i class="fa-solid fa-play"></i
-                    ></span>
-                  </div>
+              <div class="question-block">
+                <p>ما مدى رضاك عن التفاعل مع الموظفين ؟</p>
+                <div class="rating-list">
+                  <label
+                    ><input type="radio" name="q3" />
+                    <span>5/5 : راضى جداً</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q3" />
+                    <span>4/5 : راضى</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q3" />
+                    <span>3/5 : لا بأس</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q3" />
+                    <span>2/5 : غير راضى</span></label
+                  >
+                  <label
+                    ><input type="radio" name="q3" />
+                    <span>1/5 : غير راضى جداً</span></label
+                  >
                 </div>
-              </li>
+              </div>
+            </div>
 
-              <li class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="video-card" data-video-id="M7lc1UVf-VE">
-                  <span class="video-date">13 ?????? 2025</span>
-                  <h5>خبر تجريبي للموقع خبر تجريبي للموقع</h5>
-                  <div class="video-thumb">
-                    <img src="./images/new-1.png" alt="" />
-                    <span class="play-btn"
-                      ><i class="fa-solid fa-play"></i
-                    ></span>
-                  </div>
-                </div>
-              </li>
-
-              <li class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="video-card" data-video-id="ysz5S6PUM-U">
-                  <span class="video-date">28 ????? 2025</span>
-                  <h5>خبر تجريبي للموقع خبر تجريبي للموقع</h5>
-                  <div class="video-thumb">
-                    <img src="./images/new-2.png" alt="" />
-                    <span class="play-btn"
-                      ><i class="fa-solid fa-play"></i
-                    ></span>
-                  </div>
-                </div>
-              </li>
-
-              <li class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="video-card" data-video-id="dQw4w9WgXcQ">
-                  <span class="video-date">12 ???? 2025</span>
-                  <h5>خبر تجريبي للموقع خبر تجريبي للموقع</h5>
-                  <div class="video-thumb">
-                    <img src="./images/new-3.png" alt="" />
-                    <span class="play-btn"
-                      ><i class="fa-solid fa-play"></i
-                    ></span>
-                  </div>
-                </div>
-              </li>
-
-              <li class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="video-card" data-video-id="M7lc1UVf-VE">
-                  <span class="video-date">13 ?????? 2025</span>
-                  <h5>خبر تجريبي للموقع خبر تجريبي للموقع</h5>
-                  <div class="video-thumb">
-                    <img src="./images/new-4.png" alt="" />
-                    <span class="play-btn"
-                      ><i class="fa-solid fa-play"></i
-                    ></span>
-                  </div>
-                </div>
-              </li>
-
-              <li class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="video-card" data-video-id="ysz5S6PUM-U">
-                  <span class="video-date">28 ????? 2025</span>
-                  <h5>خبر تجريبي للموقع خبر تجريبي للموقع</h5>
-                  <div class="video-thumb">
-                    <img src="./images/new-5.png" alt="" />
-                    <span class="play-btn"
-                      ><i class="fa-solid fa-play"></i
-                    ></span>
-                  </div>
-                </div>
-              </li>
-
-              <li class="col-lg-4 col-md-6 col-sm-12 mb-4">
-                <div class="video-card" data-video-id="dQw4w9WgXcQ">
-                  <span class="video-date">12 ???? 2025</span>
-                  <h5>خبر تجريبي للموقع خبر تجريبي للموقع</h5>
-                  <div class="video-thumb">
-                    <img src="./images/new-6.png" alt="" />
-                    <span class="play-btn"
-                      ><i class="fa-solid fa-play"></i
-                    ></span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <!-- navigation holder -->
-            <div class="holder" dir="ltr"></div>
-          </div>
+            <div class="col-12 mt-4 text-center">
+              <button type="submit" class="submit-btn">إرسال التقييم</button>
+            </div>
+          </form>
         </div>
       </section>
-
       <!-- End content section -->
+
       <!-- Start footer  -->
       <footer>
         <div class="container">
@@ -389,7 +399,9 @@
                   <nav>
                     <ul class="d-flex">
                       <li>
-                        <a href="./freq-questions.html">الاسئلة الشائعة</a>
+                        <a href="./customer-satisfaction.html"
+                          >الأسئلة الشائعة</a
+                        >
                       </li>
                       -
                       <li><a href="./privacy.html">سياسة الخصوصية</a></li>
@@ -422,7 +434,7 @@
           <button class="close-menu">
             <i class="fa-solid fa-circle-xmark"></i>
           </button>
-          <li class="nav-link">
+          <li class="nav-link active">
             <a href="./index.html">
               <img src="./images/home.png" alt="" />
               <span> الرئيسية </span>
@@ -435,16 +447,16 @@
               <span>التعليم المستمر</span>
             </a>
           </li>
-          <li>
+          <li class="">
             <a href="./programs.html">
               <img src="./images/programs.png" alt="" />
               <span>البرامج و المبادرات</span>
             </a>
           </li>
           <li>
-            <a href="accountantPlatform.html">
+            <a href="customer-satisfaction.html">
               <i class="fa-solid fa-keyboard"></i>
-              <span>منصة محاسبة معتمدة</span>
+              <span>قياس الرضا للمستفيدين</span>
             </a>
           </li>
           <li>
@@ -454,7 +466,7 @@
             </a>
           </li>
 
-          <li class="nav-link active">
+          <li class="nav-link">
             <a href="./news.html">
               <img src="./images/paper-bottom.png" alt="" />
               <span> الأخبار </span>
@@ -518,7 +530,7 @@
           <li>
             <a href="./experts-main.html">
               <i class="fa-solid fa-people-group" style="margin-left: 5px"></i>
-              <span>الخبراء و المستشارين</span>
+              <span>برنامج الإرشاد المهنى</span>
             </a>
           </li>
           <li>
@@ -535,25 +547,6 @@
       </nav>
     </section>
     <!-- End responsive menu  -->
-
-    <!-- Video modal -->
-    <div id="videoModal" class="video-modal" aria-hidden="true">
-      <div class="video-modal-content" role="dialog" aria-modal="true">
-        <button class="video-close" type="button" aria-label="Close">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="video-frame">
-          <iframe
-            id="videoFrame"
-            src=""
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
-
     <!-- js libraries -->
     <script src="./js/jquery-3.7.0.min.js"></script>
     <!-- Arabic version -->
@@ -567,38 +560,8 @@
     </script> -->
     <!-- font-awesome -->
     <script src="./js/all.min.js"></script>
-    <!-- string character -->
-    <script src="./js/ETC.js"></script>
-    <script src="./js/jPages.js"></script>
+
     <!-- own js -->
     <script src="./js/custom.js"></script>
-    <script>
-      $(function () {
-        $("div.holder").jPages({
-          containerID: "itemContainer",
-          previous: "",
-          next: "",
-          perPage: 3,
-          midRange: 0,
-          direction: "rtl",
-          animation: "fadeIn",
-        });
-      });
-      // Start news details
-      if ($(window).width() >= 1200) {
-        $().ellipsis(150, ".new-details p");
-      }
-      if ($(window).width() >= 992 && $(window).width() <= 1199) {
-        $().ellipsis(110, ".new-details p");
-      }
-
-      if ($(window).width() < 992) {
-        $().ellipsis(300, ".new-details p");
-      }
-      if ($(window).width() <= 500) {
-        $().ellipsis(100, ".new-details p");
-      }
-      // End news details
-    </script>
   </body>
 </html>
