@@ -4825,6 +4825,10 @@ a.jp-next:after {
 .satisfaction-layout {
   align-items: flex-start;
 }
+.satisfaction-layout > .col-lg-6:only-child {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
 .satisfaction-form-wrap {
   display: flex;
 }
