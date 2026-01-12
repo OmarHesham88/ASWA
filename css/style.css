@@ -2238,6 +2238,7 @@ input[type="number"] {
 .rules-policy-section .rule-link:hover {
   border-bottom-color: var(--main);
 }
+
 @media (max-width: 767.98px) {
   .rules-policy-section .allprograms {
     grid-template-columns: 1fr;
@@ -2246,6 +2247,7 @@ input[type="number"] {
     align-items: flex-start;
   }
 }
+
 .member-name {
   font-family: "DinNext-bold";
 }
