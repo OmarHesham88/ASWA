@@ -2183,6 +2183,66 @@ input[type="number"] {
   margin: 10px auto;
   width: 90%;
 }
+.rules-policy-section .rule-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: rgba(25, 27, 49, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+}
+.rules-policy-section .allprograms {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.rules-policy-section .rule-item-title {
+  font-size: 18px;
+  color: var(--default);
+  font-family: "DinNext-bold";
+}
+.rules-policy-section .rule-item-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.rules-policy-section .rule-download {
+  background: var(--main);
+  color: #0f1226;
+  border: 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--slide);
+}
+.rules-policy-section .rule-download:hover {
+  background: #19afdf;
+}
+.rules-policy-section .rule-link {
+  color: var(--main);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: var(--slide);
+}
+.rules-policy-section .rule-link:hover {
+  border-bottom-color: var(--main);
+}
+@media (max-width: 767.98px) {
+  .rules-policy-section .allprograms {
+    grid-template-columns: 1fr;
+  }
+  .rules-policy-section .rule-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .member-name {
   font-family: "DinNext-bold";
 }
