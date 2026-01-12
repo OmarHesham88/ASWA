@@ -174,145 +174,255 @@
       <!-- Start content section -->
       <section class="satisfaction-section">
         <div class="container">
-          <form class="satisfaction-form" action="#">
-            <div class="row">
-              <div class="col-12 mb-4">
-                <label class="form-label">الاسم الكريم</label>
-                <input
-                  type="text"
-                  class="form-input"
-                  placeholder="اكتب الاسم كاملاً"
-                />
-              </div>
-              <div class="col-md-6 mb-4">
-                <label class="form-label">البريد الإلكتروني</label>
-                <input
-                  type="email"
-                  class="form-input"
-                  placeholder="مثال: example@gmail.com"
-                />
-              </div>
-              <div class="col-md-6 mb-4">
-                <label class="form-label">رقم الهاتف</label>
-                <input
-                  type="tel"
-                  class="form-input"
-                  placeholder="مثال: +966 12345656"
-                />
+          <div class="row satisfaction-layout g-4">
+            <div class="col-lg-6 satisfaction-form-wrap">
+              <form class="satisfaction-form" action="#">
+                <div class="row">
+                  <div class="col-12 mb-4">
+                    <label class="form-label">الاسم الكريم</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="اكتب الاسم كاملاً"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label">البريد الإلكتروني</label>
+                    <input
+                      type="email"
+                      class="form-input"
+                      placeholder="مثال: example@gmail.com"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label">رقم الهاتف</label>
+                    <input
+                      type="tel"
+                      class="form-input"
+                      placeholder="مثال: +966 12345656"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label">الجنس</label>
+                    <div class="form-radio-group">
+                      <label class="radio-item">
+                        <input type="radio" name="gender" />
+                        <span>ذكر</span>
+                      </label>
+                      <label class="radio-item">
+                        <input type="radio" name="gender" />
+                        <span>أنثى</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label">العلاقة مع الجمعية</label>
+                    <div class="satisfaction-select-wrap">
+                      <select class="satisfaction-select">
+                        <option>زائر</option>
+                        <option>عضو</option>
+                        <option>متطوع</option>
+                        <option>مُستفيد</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="satisfaction-questions">
+                  <div class="question-block">
+                    <p>ما مدى رضاك عن الخدمة ؟</p>
+                    <div class="rating-list">
+                      <label
+                        ><input type="radio" name="q1" />
+                        <span>5/5 : راضى جداً</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q1" />
+                        <span>4/5 : راضى</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q1" />
+                        <span>3/5 : لا بأس</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q1" />
+                        <span>2/5 : غير راضى</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q1" />
+                        <span>1/5 : غير راضى جداً</span></label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="question-block">
+                    <p>ما مدى رضاك عن التفاعل مع الموظفين ؟</p>
+                    <div class="rating-list">
+                      <label
+                        ><input type="radio" name="q2" />
+                        <span>5/5 : راضى جداً</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q2" />
+                        <span>4/5 : راضى</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q2" />
+                        <span>3/5 : لا بأس</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q2" />
+                        <span>2/5 : غير راضى</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q2" />
+                        <span>1/5 : غير راضى جداً</span></label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="question-block">
+                    <p>ما مدى رضاك عن التفاعل مع الموظفين ؟</p>
+                    <div class="rating-list">
+                      <label
+                        ><input type="radio" name="q3" />
+                        <span>5/5 : راضى جداً</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q3" />
+                        <span>4/5 : راضى</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q3" />
+                        <span>3/5 : لا بأس</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q3" />
+                        <span>2/5 : غير راضى</span></label
+                      >
+                      <label
+                        ><input type="radio" name="q3" />
+                        <span>1/5 : غير راضى جداً</span></label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="question-block">
+                    <p>ملاحظات اضافية</p>
+                    <textarea
+                      class="form-input form-textarea"
+                      name="notes"
+                      placeholder="اكتب تعليقاتك و مقترحاتك هنا"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-4 text-center">
+                  <button type="submit" class="submit-btn">
+                    إرسال التقييم
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6 satisfaction-charts">
+              <div class="satisfaction-charts-card">
+                <div class="charts-header">
+                  <h3>نتائج قياس الرضا</h3>
+                  <p class="mb-0">عدد المشاركين: <span>3555</span></p>
+                  <p>آخر تحديث : <span>20/10/2025</span></p>
+                </div>
+                <div class="charts-grid">
+                  <div class="chart-card">
+                    <div class="chart-ring" style="--value: 62">
+                      <div class="chart-center">
+                        <span class="chart-value">62%</span>
+                        <span class="chart-label">ذكور</span>
+                      </div>
+                    </div>
+                    <div class="chart-meta">
+                      <div class="chart-title">تقسيم النوع</div>
+                      <div class="chart-stats">
+                        <span>ذكور: 620</span>
+                        <span>إناث: 380</span>
+                      </div>
+                      <div class="chart-total">المشاركين: 1000</div>
+                    </div>
+                  </div>
+
+                  <div class="chart-card">
+                    <div class="chart-ring" style="--value: 74">
+                      <div class="chart-center">
+                        <span class="chart-value">74%</span>
+                        <span class="chart-label">Q1</span>
+                      </div>
+                    </div>
+                    <div class="chart-meta">
+                      <div class="chart-title">السؤال 1</div>
+                      <div class="chart-stats">
+                        <span>إيجابى: 740</span>
+                        <span>سلبى: 260</span>
+                      </div>
+                      <div class="chart-total">المشاركين: 1000</div>
+                    </div>
+                  </div>
+
+                  <div class="chart-card">
+                    <div class="chart-ring" style="--value: 58">
+                      <div class="chart-center">
+                        <span class="chart-value">58%</span>
+                        <span class="chart-label">Q2</span>
+                      </div>
+                    </div>
+                    <div class="chart-meta">
+                      <div class="chart-title">السؤال 2</div>
+                      <div class="chart-stats">
+                        <span>إيجابى: 580</span>
+                        <span>سلبى: 420</span>
+                      </div>
+                      <div class="chart-total">المشاركين: 1000</div>
+                    </div>
+                  </div>
+
+                  <div class="chart-card">
+                    <div class="chart-ring" style="--value: 81">
+                      <div class="chart-center">
+                        <span class="chart-value">81%</span>
+                        <span class="chart-label">Q3</span>
+                      </div>
+                    </div>
+                    <div class="chart-meta">
+                      <div class="chart-title">السؤال 3</div>
+                      <div class="chart-stats">
+                        <span>إيجابى: 810</span>
+                        <span>سلبى: 190</span>
+                      </div>
+                      <div class="chart-total">المشاركين: 1000</div>
+                    </div>
+                  </div>
+
+                  <div class="chart-card">
+                    <div class="chart-ring" style="--value: 67">
+                      <div class="chart-center">
+                        <span class="chart-value">67%</span>
+                        <span class="chart-label">Q4</span>
+                      </div>
+                    </div>
+                    <div class="chart-meta">
+                      <div class="chart-title">السؤال 4</div>
+                      <div class="chart-stats">
+                        <span>إيجابى: 670</span>
+                        <span>سلبى: 330</span>
+                      </div>
+                      <div class="chart-total">المشاركين: 1000</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-md-6 mb-4">
-                <label class="form-label">الجنس</label>
-                <div class="form-radio-group">
-                  <label class="radio-item">
-                    <input type="radio" name="gender" />
-                    <span>ذكر</span>
-                  </label>
-                  <label class="radio-item">
-                    <input type="radio" name="gender" />
-                    <span>أنثى</span>
-                  </label>
-                </div>
-              </div>
-              <div class="col-md-6 mb-4">
-                <label class="form-label">العلاقة مع الجمعية</label>
-                <div class="satisfaction-select-wrap">
-                  <select class="satisfaction-select">
-                    <option>زائر</option>
-                    <option>عضو</option>
-                    <option>متطوع</option>
-                    <option>مُستفيد</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="satisfaction-questions">
-              <div class="question-block">
-                <p>ما مدى رضاك عن الخدمة ؟</p>
-                <div class="rating-list">
-                  <label
-                    ><input type="radio" name="q1" />
-                    <span>5/5 : راضى جداً</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q1" />
-                    <span>4/5 : راضى</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q1" />
-                    <span>3/5 : لا بأس</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q1" />
-                    <span>2/5 : غير راضى</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q1" />
-                    <span>1/5 : غير راضى جداً</span></label
-                  >
-                </div>
-              </div>
-
-              <div class="question-block">
-                <p>ما مدى رضاك عن التفاعل مع الموظفين ؟</p>
-                <div class="rating-list">
-                  <label
-                    ><input type="radio" name="q2" />
-                    <span>5/5 : راضى جداً</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q2" />
-                    <span>4/5 : راضى</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q2" />
-                    <span>3/5 : لا بأس</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q2" />
-                    <span>2/5 : غير راضى</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q2" />
-                    <span>1/5 : غير راضى جداً</span></label
-                  >
-                </div>
-              </div>
-
-              <div class="question-block">
-                <p>ما مدى رضاك عن التفاعل مع الموظفين ؟</p>
-                <div class="rating-list">
-                  <label
-                    ><input type="radio" name="q3" />
-                    <span>5/5 : راضى جداً</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q3" />
-                    <span>4/5 : راضى</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q3" />
-                    <span>3/5 : لا بأس</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q3" />
-                    <span>2/5 : غير راضى</span></label
-                  >
-                  <label
-                    ><input type="radio" name="q3" />
-                    <span>1/5 : غير راضى جداً</span></label
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 mt-4 text-center">
-              <button type="submit" class="submit-btn">إرسال التقييم</button>
-            </div>
-          </form>
+          </div>
         </div>
       </section>
       <!-- End content section -->
